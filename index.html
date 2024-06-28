@@ -12,27 +12,44 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
   <body>
-    <main>
-      <div>
-        <p>Our Pricing</p>
-        <div>
-          <p>Annually</p>
-          <label for="plan">
-            <input type="checkbox" name="plan" id="plan" />
-            <span></span>
+    <main class="main-container">
+      <div class="main__text-container">
+        <p class="text__heading">Our Pricing</p>
+        <div class="text__plan-container">
+          <p class="plan__type">Annually</p>
+          <label for="plan" class="plan__switch-container">
+            <input
+              type="checkbox"
+              name="plan"
+              id="plan"
+              class="plan__check"
+              checked
+            />
+            <span class="plan__switch"></span>
           </label>
-          <p>Monthly</p>
+          <p class="plan__type">Monthly</p>
         </div>
       </div>
 
-      <div>
-        <div>
-          <p>Basic</p>
-          <p>&dollar;<span>199.99</span></p>
-          <table>
+      <div class="main__card-container">
+        <div class="card--side card">
+          <p class="card__heading--side">Basic</p>
+          <p class="card__price card__price--side">
+            &dollar;&nbsp;<span>199.99</span>
+          </p>
+          <table class="card__desc--side card__desc">
             <tr>
               <td>500 GB Storage</td>
             </tr>
@@ -43,13 +60,17 @@
               <td>Send up to 3 GB</td>
             </tr>
           </table>
-          <button type="button">Learn More</button>
+          <button type="button" class="card__button--side card__button">
+            Learn More
+          </button>
         </div>
 
-        <div>
-          <p>Professional</p>
-          <p>&dollar;<span>249.99</span></p>
-          <table>
+        <div class="card--center card">
+          <p class="card__heading--center">Professional</p>
+          <p class="card__price card__price--center">
+            &dollar;&nbsp;<span>249.99</span>
+          </p>
+          <table class="card__desc--center card__desc">
             <tr>
               <td>1 TB Storage</td>
             </tr>
@@ -60,13 +81,17 @@
               <td>Send up to 10 GB</td>
             </tr>
           </table>
-          <button type="button">Learn More</button>
+          <button type="button" class="card__button--center card__button">
+            Learn More
+          </button>
         </div>
 
-        <div>
-          <p>Master</p>
-          <p>&dollar;<span>399.99</span></p>
-          <table>
+        <div class="card--side card">
+          <p class="card__heading--side">Master</p>
+          <p class="card__price card__price--side">
+            &dollar;&nbsp;<span>399.99</span>
+          </p>
+          <table class="card__desc--side card__desc">
             <tr>
               <td>2 TB Storage</td>
             </tr>
@@ -77,7 +102,9 @@
               <td>Send up to 20 GB</td>
             </tr>
           </table>
-          <button type="button">Learn More</button>
+          <button type="button" class="card__button--side card__button">
+            Learn More
+          </button>
         </div>
       </div>
     </main>
